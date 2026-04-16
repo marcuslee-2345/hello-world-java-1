@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {// change the below to your jdk path
-        JAVA_HOME = "C:\\Program Files\\Java\\jdk-21"
+        JAVA_HOME = "C:\\Program Files\\Java\\jdk-21.0.10"
         PATH = "${JAVA_HOME}\\bin;${env.PATH}"
     }
 
@@ -17,7 +17,7 @@ pipeline {
 
         stage('Checkout') { //change the below path to your repositoy url
             steps {
-                git branch: 'master', url: 'https://github.com/marcuslee-2345/hello-world-java-1'
+                git branch: 'main', url: 'https://github.com/marcuslee-2345/hello-world-java-1.git'
             }
         }
 
