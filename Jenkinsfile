@@ -17,7 +17,7 @@ pipeline {
 
         stage('Checkout') { //change the below path to your repositoy url
             steps {
-                git branch: 'main', url: 'https://github.com/marcuslee-2345/hello-world-java-1.git'
+                git branch: 'master', url: 'https://github.com/marcuslee-2345/hello-world-java-1.git'
             }
         }
 
